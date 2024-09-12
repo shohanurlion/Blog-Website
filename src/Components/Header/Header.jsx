@@ -62,8 +62,8 @@ const Header = () => {
                             <div className='md:hidden flex flex-col mt-4'>
                                 <ul className='flex flex-col xl:gap-y-4'>
                                     <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A] cursor-pointer'><Link to={'/'}>Home</Link></li>
-                                    <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A]'>Blog</li>
-                                    <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A]'>Single Post</li>
+                                    <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A]'><Link to={'/allblog'}>Blog</Link></li>
+                                    <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A]'><Link to={'/singlepost'}>Single Post</Link></li>
                                     <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A]'>Pages</li>
                                     <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A]'>Contact</li>
                                 </ul>
