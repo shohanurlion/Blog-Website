@@ -53,7 +53,7 @@ const Single = () => {
                             <img src={Singleimg2} alt='single_img1' className='w-full' />
                         </div>
                         {/* Addvertiesment part */}
-                        <div className='w-full flex justify-center py-8'>
+                        <div className='w-full py-8'>
                             <Add/>
                         </div>
 
