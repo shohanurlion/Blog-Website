@@ -7,9 +7,9 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <>
-            <div className='bg-[#E8E8EA] pt-[64px] mt-[100px]'>
+            <div className='bg-[#E8E8EA] pt-[16px] mt-5 lg:mt-[100px] px-4 md:px-0'>
                 <Container>
-                    <div className='flex flex-col lg:flex-row justify-between px-4 md:px-0'>
+                    <div className='flex flex-col lg:flex-row justify-between py-5 md:px-0 mb-8'>
                         <div className='w-full lg:w-[30%] mb-8 lg:mb-0'>
                             <div className=''>
                                 <h5 className='font-plus-jakarta text-[18px] text-[#181A2A] font-medium leading-[28px] xl:font-bold'>About</h5>
@@ -63,7 +63,7 @@ const Footer = () => {
                         </div>
                     </div>
                     
-                    <hr className='border-b-2 border-[#DCDDDF] pt-[64px]' />
+                    <hr className='border-b-2 border-[#DCDDDF] pt-[0px]' />
                     
                     <div className='flex flex-col md:flex-row items-center justify-between py-[32px]'>
                         <div className='flex items-center gap-x-3 mb-4 md:mb-0'>

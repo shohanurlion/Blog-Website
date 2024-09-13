@@ -7,7 +7,7 @@ const Banner = () => {
     return (
         <>
             <Container>
-                <div className='py-[30px] mt-[100px]'>
+                <div className='py-[30px] mt-[45px] px-4'>
                     <img src={Bannerimg} alt='bannerimg' className='w-full'/>
                 </div>
             </Container>

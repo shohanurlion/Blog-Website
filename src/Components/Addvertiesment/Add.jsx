@@ -3,7 +3,7 @@ import React from 'react'
 const Add = () => {
   return (
     <>
-<div className='flex justify-center'>
+<div className='flex justify-center px-4'>
 <div className='w-[950px] h-[100px] bg-[#E8E8EA] text-center py-[15px] rounded-[12px]'>
             <div className=''>
                 <p className='text-[14px] font-normal leading-[20px] font-work-sans text-[#696A75]'>Advertisement</p>

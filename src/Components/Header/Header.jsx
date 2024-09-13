@@ -47,7 +47,7 @@ const Header = () => {
                                     <li className=' font-work-sans md:text-[12px] xl:text-[16px] xl:leading-[24px] font-normal text-[#3B3C4A]'><Link to={'/'}>Home</Link></li>
                                     <li className=' font-work-sans md:text-[12px] xl:text-[16px] xl:leading-[24px] font-normal text-[#3B3C4A]'><Link to={'/allblog'}>Blog</Link></li>
                                     <li className=' font-work-sans md:text-[12px] xl:text-[16px] xl:leading-[24px] font-normal text-[#3B3C4A]'><Link to={'/singlepost'}>Single Post</Link></li>
-                                    <li className=' font-work-sans md:text-[12px] xl:text-[16px] xl:leading-[24px] font-normal text-[#3B3C4A]'>Pages</li>
+                                    <li className=' font-work-sans md:text-[12px] xl:text-[16px] xl:leading-[24px] font-normal text-[#3B3C4A]'><Link to={'/authorpage'}>Pages</Link></li>
                                     <li className=' font-work-sans md:text-[12px] xl:text-[16px] xl:leading-[24px] font-normal text-[#3B3C4A]'>Contact</li>
                                 </ul>
                             </div>
@@ -55,7 +55,7 @@ const Header = () => {
                             {/* Input or icon part */}
                             <div className='hidden md:flex w-[25%] items-center justify-end gap-x-10'>
                                 <div className='relative'>
-                                    <input type='text' placeholder='Search' className='w-[100%] border py-2 px-2 bg-[#F4F4F5]' />
+                                    <input type='text' placeholder='Search' className='w-[100%] border py-2 px-3 bg-[#F4F4F5] rounded-[6px]' />
                                     <div className='absolute top-[14px] right-[16px]'>
                                         <IoIosSearch />
                                     </div>
@@ -75,13 +75,13 @@ const Header = () => {
 
                         {/* Mobile Nav Menu */}
                         {menuOpen && (
-                            <div className='md:hidden flex flex-col mt-4'>
-                                <ul className='flex flex-col xl:gap-y-4'>
-                                    <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A] cursor-pointer'><Link to={'/'}>Home</Link></li>
-                                    <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A]'><Link to={'/allblog'}>Blog</Link></li>
-                                    <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A]'><Link to={'/singlepost'}>Single Post</Link></li>
-                                    <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A]'>Pages</li>
-                                    <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A]'>Contact</li>
+                            <div className='bg-[#F0E9DA] md:hidden flex flex-col mt-4'>
+                                <ul className='flex flex-col text-center'>
+                                    <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A] py-2 duration-700 ease-in-out cursor-pointer hover:bg-[black] hover:text-[white]'><Link to={'/'}>Home</Link></li>
+                                    <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A] py-2 duration-700 ease-in-out cursor-pointer hover:bg-[black] hover:text-[white]'><Link to={'/allblog'}>Blog</Link></li>
+                                    <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A] py-2 duration-700 ease-in-out cursor-pointer hover:bg-[black] hover:text-[white]'><Link to={'/singlepost'}>Single Post</Link></li>
+                                    <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A] py-2 duration-700 ease-in-out cursor-pointer hover:bg-[black] hover:text-[white]'><Link to={'/authorpage'}>Pages</Link></li>
+                                    <li className=' font-work-sans text-[16px] leading-[24px] font-normal text-[#3B3C4A] py-2 duration-700 ease-in-out cursor-pointer hover:bg-[black] hover:text-[white]'>Contact</li>
                                 </ul>
                             </div>
                         )}

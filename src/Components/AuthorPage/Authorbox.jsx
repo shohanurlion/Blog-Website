@@ -6,8 +6,8 @@ import { IoLogoYoutube } from "react-icons/io";
 const Authorbox = () => {
   return (
    <>
-   <div className='flex justify-center w-full bg-[#F6F6F7] rounded-[12px] py-[48px]'>
-        <div className='w-[668px] h-[248px] text-center'>
+   <div className='flex justify-center w-full rounded-[12px] px-4 py-[48px] mb-[40px]'>
+        <div className='bg-[#F6F6F7] w-[668px] h-[248px] text-center px-4'>
                 <div className='w-[250px] h-[64px] mx-auto flex items-center gap-x-3 pb-[24px]'>
                     <div className='w-[64px] h-[64px] rounded-full'>
                     <img src={Authorimg} alt='authorimg'/>
@@ -17,7 +17,7 @@ const Authorbox = () => {
                         <p className='text-[14px] leading-[20px] text-[#696A75] font-[400] font-work-sans'>Collaborator & Editor</p>
                     </div>
                 </div>
-                <p className='text-[18px] leading-[26px] text-[#3B3C4A] font-[400] font-work-sans'>Meet Jonathan Doe, a passionate writer and blogger with a love for technology and travel. Jonathan holds a degree in Computer Science and has spent years working in the tech industry, gaining a deep understanding of the impact technology has on our lives.</p>
+                <p className='text-[10px] px-3 md:px-0 md:text-[18px] leading-[26px] text-[#3B3C4A] font-[400] font-work-sans'>Meet Jonathan Doe, a passionate writer and blogger with a love for technology and travel. Jonathan holds a degree in Computer Science and has spent years working in the tech industry, gaining a deep understanding of the impact technology has on our lives.</p>
                 <div className='w-[250px] h-[64px] mx-auto flex items-center justify-center gap-x-3'>
                     <ul className='flex items-center gap-x-5'>
                         <li className='w-[32px] h-[32px] bg-[#696A75] rounded-[6px] flex items-center justify-center text-[white] duration-700 ease-in-out cursor-pointer hover:bg-[white] hover:border-2 border-[black] hover:text-[black]'><FaFacebookF /></li>
