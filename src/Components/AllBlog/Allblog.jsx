@@ -6,7 +6,10 @@ const Allblog = () => {
   return (
    <>
     <Container>
+      <div className='mt-[100px]'>
       <Post/>
+      </div>
+      
     </Container>
    </>
   )

@@ -6,7 +6,7 @@ import Post from '../Latestpost/Post'
 const Author = () => {
     return (
         <>
-            <div className=''>
+            <div className='mt-[100px]'>
                 <Container>
                     <div>
                        <Authorbox/>

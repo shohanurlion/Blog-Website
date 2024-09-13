@@ -8,7 +8,7 @@ import { CgProfile } from "react-icons/cg";
 const Single = () => {
     return (
         <>
-            <div className=''>
+            <div className='mt-[100px]'>
                 <Container>
                     {/* Title part */}
 

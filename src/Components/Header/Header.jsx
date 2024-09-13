@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Container from '../Container';
 import logimg from '../../assets/Logo.png';
 import { MdSupervisorAccount } from "react-icons/md";
@@ -9,15 +9,31 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isSticky, setIsSticky] = useState(false);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
+    useEffect(() => {
+        const handleScroll = () => {
+          if (window.scrollY > 20) {
+            setIsSticky(true);
+          } else {
+            setIsSticky(false);
+          }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+    
 
     return (
         <>
-            <div className=''>
-                <div className='px-4 md:px-0 py-[32px]'>
+            <div className={isSticky ? 'navbar sticky' : 'navbar'}>
+                <div className='px-4 md:px-0 py-[20px]'>
                     <Container>
                         <div className='flex items-center justify-between'>
                             {/* Logo part */}
